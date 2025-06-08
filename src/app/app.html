@@ -10,5 +10,13 @@
 <profile></profile>
  <button (click)="handClickEvent()">Click me</button>
  <button (click)="sum(2,4)">Sum</button>
-<signup><signup>
+
    
+    <h1>Counter app</h1>
+    <div style="text-align: center;">  <h3 class="count">{{count}}</h3>
+    
+    <button class ="btn bg-red" (click)="handleCounterChange('minus')">Decrement</button>
+    <button class ="btn bg-black"(click)="handleCounterChange('reset')">Reset</button>
+    <button class ="btn bg-green"(click)="handleCounterChange('plus')">Increment</button>
+    </div>
+<signup><signup></signup>
