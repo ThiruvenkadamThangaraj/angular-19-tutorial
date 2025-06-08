@@ -1,3 +1,51 @@
+<style>
+    /* h1  {
+        color: blue;
+        background-color: black;
+    }    */
+    /* h2 {
+        color: green;
+    }    */
+    h3 {
+        color: red;
+    }
+</style>
+<button (click)="hide()">Hide</button>
+<button (click)="show()">Show</button> 
+<button (click)="toggle()">toggle</button> 
+<button (click)="toggle()">{{display?'hide':'show'}}</button> 
+
+<h1>Switch case in angular</h1>
+<button (click)="handleColor('red')">Red</button>
+<button (click)="handleColor('blue')">blue</button>
+<button (click)="handleColor('yellow')">yellow</button>
+<button (click)="handleColor('green')">Green</button>
+
+<input type="text" placeholder="Enter color" (input)="changeColor($event)" #colorInput>
+
+@switch (color) {
+    @case ('red') {<h1 style="background-color: red;"> red color</h1>}
+    @case ('green') {<h1 style="background-color: green;">green color</h1>}
+    @case ('blue') {<h1 style="background-color: blue;">blue color</h1>}
+    @case ('yellow') {<h1 style="background-color: yellow;">yellow color</h1>}
+    @default {<h1 style="background-color: lightblue; color:white">No color match</h1>}
+}
+@if(display){
+<div style="background-color: green;height: 200px;width: 200px;"></div>
+} 
+@if(display){
+<div style="background-color: yellow;height: 200px;width: 200px;"></div>
+}
+<h3 style="background-color: gold; color: black;font-size: 50;">This is heading 3 tag</h3>
+
+<h1>Get and Set Input field value</h1>
+<input value="{{username}}"(input)="getUsername($event)"type="text" #useNameField placeholder="Enter user Name">
+<br>
+<br>
+<button (click)="setUserName()">Set User Name</button> 
+<button (click)="getUserNameTempleate(useNameField.value)">get User Name</button> 
+
+{{username}}
 <h1>This is first angular application </h1>
 <h2>{{title}}</h2>
 <h2>{{name}}</h2>
