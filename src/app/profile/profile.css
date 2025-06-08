@@ -1,0 +1,9 @@
+h1{
+    color:rgba(17, 14, 9, 0.653);
+    background-color: rgb(255, 170, 0);
+    font-size: 12px;
+    font-display: auto ;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid black;
+}
